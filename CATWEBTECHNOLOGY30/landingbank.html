@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+</head>
+<!----Nsengiyumva Edouard 222001639 on 16th april 2024--->
+<body>
+    <h1>Admin User</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="landingbank.php">
+        <label for="bank_name">Bank Name:</label><br>
+        <input type="text" id="bank_name" name="bank_name" required><br>
+        <label for="account_number">Bank Account:</label><br>
+        <input type="tel" id="account_number" name="account_number" required><br>
+         <label  for="branch_name">branch_name:</label><br>
+        <input type="text" id="branch_name" name="branch_name" required><br>
+         <br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Bank </h2>
+     <form method="post" action="landingbank.php">
+                    <input type="number" name="bank_id" placeholder=" New bank_id">
+                    <input type="text" name="newbank_name" placeholder="New bank_name">
+                    <input type="text" name="newaccount_number" placeholder="New account_number">
+                    <input type="text" name="newbranch_name" placeholder="New branch_name">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

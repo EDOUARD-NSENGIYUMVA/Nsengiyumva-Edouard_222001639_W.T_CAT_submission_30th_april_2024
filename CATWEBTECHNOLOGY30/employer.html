@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Employer</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form action="landingemployer.php" method="post">
+        <label for="employer_name">Employer Name:</label><br>
+        <input type="text" id="employer_name" name="employer_name" required><br>
+        <label for="bank_id">Employer Account:</label><br>
+        <input type="tel" id="bank_id" name="bank_id" required><br>
+         <label  for="contact_number">Contact_number:</label><br>
+        <input type="text" id="contact_number" name="contact_number" required><br>
+         <label  for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+         <br>
+        <input type="submit" value="Sign Up"><br>
+        
+    </form>
+</body>
+</html>

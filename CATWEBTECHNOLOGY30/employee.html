@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Employee</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingemployee.php">
+        <label for="employee_name">Employee_name:</label>
+        <input type="text" id="employee_name" name="employee_name" required><br>
+        <label for="department_id">department_id:</label>
+        <input type="number" id="department_id" name="department_id" required><br>
+        <label for="manager_id">manager_id:</label>
+        <input type="number" id="manager_id" name="manager_id" required><br>
+        <label for="position">Position:</label>
+        <select name="position">
+            <option value="goalkeeper">Software Engineer</option>
+            <option value="forward">Marketing Specialist</option>
+            <option value="defence">Sales Representative</option>
+        </select><br>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required><br>
+        <label for="date_of_hire">date_of_hire:</label>
+        <input type="date" id="date_of_hire" name="date_of_hire" required><br>
+       <button type="submit" name="create">CREATE</button>
+    </form></body></html>

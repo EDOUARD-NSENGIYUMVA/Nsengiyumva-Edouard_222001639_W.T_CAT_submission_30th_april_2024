@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Employee</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form action="employeelanding.php" method="post">
+        <label for="employer_name">employee_name:</label><br>
+        <input type="text" id="employer_name" name="employer_name" required><br>
+        <label  for="department_id">department_id:</label><br>
+        <input type="number" id="department_id" name="department_id" required><br>
+        <label for="manager_id ">Manager_id:</label><br>
+        <input type="number" id="manager_id " name="manager_id " required><br>
+         <label  for="position">position:</label><br>
+        <input type="text" id="position" name="position" required><br>
+         <label  for="salary">salary:</label><br>
+        <input type="text" id="salary" name="salary" required><br>
+         <label  for="date_of_hire">date_of_hire:</label><br>
+        <input type="date" id="date_of_hire" name="date_of_hire" required><br>
+         <br>
+        <input type="submit" value="Sign Up"><br>
+        
+    </form>
+
+
+<h2>Update,delete and read of employee</h2>
+     <form method="post" action="employeelanding.php">
+                    <input type="number" name="employee_id" placeholder=" New employee_id"><br>
+                    <input type="text" name="newemployee_name" placeholder="newemployee_name"><br>
+                    <input type="text" name="newdepartment_id" placeholder="Newdepartment_id"><br>
+                    <input type="text" name="newmanager_id" placeholder="Newmanager_id">
+                     <input type="text" name="newposition" placeholder=" Newposition"><br>
+                    <input type="text" name="newsalary" placeholder="newsalary"><br>
+                    <input type="text" name="newdate_of_hire" placeholder="Newdate_of_hire"><br>
+                   <button type="submit" name="update">UPDATE</button>
+                  <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+
+
+
+
+</body></html>

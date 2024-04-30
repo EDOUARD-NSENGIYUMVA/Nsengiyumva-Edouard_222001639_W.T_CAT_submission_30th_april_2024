@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----Nsengiyumva Edouard 222001639on 16th april 2024--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Department</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingdepartment.php">
+        <label for="department_id">department_id:</label>
+        <input type="number" id="department_id" name="department_id"><br>
+        <label for="department_name">department_name:</label>
+        <input type="text" id="department_name" name="department_name" required><br>
+        <label for="location">location:</label>
+        <input type="location" id="location" name="location" required><br>
+        <label for="budget">budget:</label>
+        <input type="text" id="budget" name="budget" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form></body></html>

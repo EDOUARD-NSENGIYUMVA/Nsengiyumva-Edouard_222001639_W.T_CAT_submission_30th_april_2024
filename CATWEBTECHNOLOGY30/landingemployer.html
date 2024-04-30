@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> employer</title>
+</head>
+<!----nsengiyumva edouard222001639 on 16th april 2024--->
+<body>
+    <h1> employer</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingemployer.php">
+        
+        <label for=" employer_name"> employer_name:</label>
+        <input type="text" id=" employer_name" name=" employer_name" required><br>
+        <label for="bank_id">bank_id:</label>
+        <input type="number" id="bank_id" name="bank_id" required><br>
+        <label for="contact_number">contact_number:</label>
+        <input type="text" id="contact_number" name="contact_number" required><br>
+        <label for="address">address:</label>
+        <input type="text" id="address" name="address" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>employer</h2>
+     <form method="post" action="landingemployer.php">
+                    <input type="number" name="employer_id" placeholder=" New employer_id"><br>
+                    <input type="text" name="newemployer_name" placeholder="New employer_name"><br>
+                    <input type="number" name="newbank_id" placeholder="New bank_id"><br>
+                    <input type="text" name="newcontact_number" placeholder="contact_number"><br>
+                    <input type="text" name="newaddress" placeholder="New address"><br>
+                  <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>

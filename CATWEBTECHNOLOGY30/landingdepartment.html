@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----Nsengiyumva222001639 on 16th april 2024--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Department</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingdepartment.php">
+        <label for="department_name">department_name:</label>
+        <input type="text" id="department_name" name="department_name" required><br>
+        <label for="location">location:</label>
+        <input type="location" id="location" name="location" required><br>
+        <label for="budget">budget:</label>
+        <input type="text" id="budget" name="budget" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Update,delete and read of department</h2>
+     <form method="post" action="landingdepartment.php">
+                    <input type="number" name="department_id" placeholder=" department_id"><br>
+                    <input type="text" name="newdepartment_name" placeholder="New department_name"><br>
+                    <input type="text" name="newlocation" placeholder="New location"><br>
+                    <input type="text" name="newbudget" placeholder="New budget"><br>
+                    <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>
